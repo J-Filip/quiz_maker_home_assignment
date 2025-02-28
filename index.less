@@ -1,0 +1,41 @@
+@import 'antd/dist/antd.dark.less'; // Introduce the official dark less style entry file
+@import 'antd/dist/antd.less';
+
+//overrided variables
+@primary-color: #933518fd;
+
+.mainLayout__content {
+  margin: 0 auto;
+  width: 90%;
+  padding: 8px;
+  @media (min-width: 768px) {
+    max-width: 1200px;
+  }
+}
+
+.carousel__container {
+  width: 100vw;
+  height: auto;
+  min-height: 93vh;
+}
+
+.ant-carousel .slick-dots li {
+  background: @primary-color;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: rgb(59, 59, 59);
+}
+
+// utility
+.paddingTop__sm {
+  padding-top: 12px;
+}
+
+.paddingTop__lg {
+  padding-top: 24px;
+}
+
+.paddingTop__xlg {
+  padding-top: 36px;
+}
