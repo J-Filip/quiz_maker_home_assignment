@@ -9,6 +9,26 @@
       "id": "8fb1",
       "question": "What is the largest planet in our solar system?",
       "answer": "Jupiter"
+    },
+    {
+      "id": "9238",
+      "question": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "id": "4c3b",
+      "question": "What is 2 + 2?",
+      "answer": "4"
+    },
+    {
+      "id": "4507",
+      "question": " Who wrote \"Romeo and Juliet\"?",
+      "answer": " William Shakespeare"
+    },
+    {
+      "id": "6cd6",
+      "question": " What is the square root of 144?",
+      "answer": "12"
     }
   ],
   "quizzes": [
@@ -23,6 +43,28 @@
         {
           "question": "What is the largest planet in our solar system?",
           "answer": "Jupiter"
+        }
+      ]
+    },
+    {
+      "id": "ab34",
+      "name": "Friday Quiz",
+      "questions": [
+        {
+          "question": "What is the capital of France?",
+          "answer": "Paris"
+        },
+        {
+          "question": "What is 2 + 2?",
+          "answer": "4"
+        },
+        {
+          "question": " Who wrote \"Romeo and Juliet\"?",
+          "answer": " William Shakespeare"
+        },
+        {
+          "question": " What is the square root of 144?",
+          "answer": "12"
         }
       ]
     }
