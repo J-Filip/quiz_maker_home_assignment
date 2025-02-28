@@ -1,25 +1,44 @@
-# React Demo App
+# Quiz Maker - React Demo App
 
-Job interview home assignment.
+Frontend Developer home assignment.
+
+## Description
+
+This project is a Quiz Maker application built with React. It allows users to create, play, and view quizzes.
+
+## Technologies Used
+
+- React
+- TypeScript
+- React Router DOM
+- Ant Design
+- Vite
+- JSON Server
 
 ## Project Setup
 
-```sh
-npm install
-```
+1.  Install dependencies:
 
-### Compile and Hot-Reload for Development
+    ```sh
+    npm install
+    ```
 
-```sh
-npm run dev
-```
+2.  Start JSON server (mock backend):
 
-### Compile and Minify for Production
+    ```sh
+    json-server --watch db.json --port 8000
+    ```
 
-```sh
-npm run build
-```
+3.  Compile and run for development:
 
-## Hosting
+    ```sh
+    npm run dev
+    ```
 
-URL:
+## Key Features
+
+- Create quiz
+- Play quiz
+- Delete quiz
+- View quiz details
+- Browse a list of quizzes
