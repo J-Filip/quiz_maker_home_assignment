@@ -12,14 +12,15 @@ export const CreatePage = () => {
   const navigate = useNavigate();
 
   const onFinish = async (values: Quiz) => {
-    const data: Quiz = await createNewQuiz(values);
+    await createNewQuiz(values);
 
+    // mock creating questions - see createQuestion function declaration
     values.questions.forEach((element) => {
       if (element.id == null) {
         createQuestion(element);
       }
     });
-    navigate(`/quiz/${data.id}/details`);
+    navigate(`/quizzes`);
   };
 
   return (

@@ -7,7 +7,7 @@ interface FetchedData<T> {
   error: string;
 }
 
-const BASE_URL = 'http://localhost:8000';
+export const BASE_URL = 'http://localhost:8000';
 
 const useFetch = <T>(url: string): FetchedData<T> => {
   const [data, setData] = useState<T | null>(null);

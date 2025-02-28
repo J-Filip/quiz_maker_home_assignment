@@ -14,7 +14,9 @@ export const DetailsPage = () => {
   const navigate = useNavigate();
 
   const onFinish = async (values: Quiz) => {
-    updateQuiz(values);
+    await updateQuiz(values);
+
+    // mock creating questions - see createQuestion function declaration
     values.questions.forEach((element) => {
       if (element.id == null) {
         createQuestion(element);

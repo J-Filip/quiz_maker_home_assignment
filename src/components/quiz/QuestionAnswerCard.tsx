@@ -1,6 +1,6 @@
 import { Button, Card, Typography } from 'antd';
 import { useState } from 'react';
-import { Question } from '../../routes/QuizListPage';
+import { Question } from './utils/api';
 
 interface QuestionViewProps {
   question: Question;

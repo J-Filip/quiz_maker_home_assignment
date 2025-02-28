@@ -1,4 +1,4 @@
-@import 'antd/dist/antd.dark.less'; // Introduce the official dark less style entry file
+@import 'antd/dist/antd.dark.less';
 @import 'antd/dist/antd.less';
 
 //overrided variables
@@ -13,12 +13,6 @@
   }
 }
 
-.carousel__container {
-  width: 100vw;
-  height: auto;
-  min-height: 93vh;
-}
-
 .ant-carousel .slick-dots li {
   background: @primary-color;
 }
@@ -27,7 +21,15 @@
   background: rgb(59, 59, 59);
 }
 
-// utility
+.questionAnswerCard__card {
+  margin: 0;
+  height: 'auto';
+  line-height: '160px';
+  text-align: 'center';
+  min-height: '500px';
+}
+
+// utilities
 .paddingTop__sm {
   padding-top: 12px;
 }
