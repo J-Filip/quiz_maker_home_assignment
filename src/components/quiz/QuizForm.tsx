@@ -33,7 +33,22 @@ export const QuizForm = (props: QuizFormProps) => {
             <Form.Item name={'id'} hidden>
               <Input />
             </Form.Item>
-            <Form.Item name={'name'} label={'Quiz Name:'} rules={[{ required: true, message: 'Please enter a name!' }]}>
+            <Form.Item
+              name={'name'}
+              label={'Quiz Name:'}
+              rules={[
+                {
+                  required: true,
+                  message: 'Please enter a name',
+                  validator: (_, value) => {
+                    if (value.trim().length === 0) {
+                      return Promise.reject(new Error('Value is empty'));
+                    }
+                    return Promise.resolve();
+                  },
+                },
+              ]}
+            >
               <Input />
             </Form.Item>
           </Col>
@@ -62,10 +77,40 @@ export const QuizForm = (props: QuizFormProps) => {
                     <Form.Item name={[index, 'id']} hidden>
                       <Input />
                     </Form.Item>
-                    <Form.Item name={[index, 'question']} label={`${index + 1}.Question:`}>
+                    <Form.Item
+                      name={[index, 'question']}
+                      label={`${index + 1}.Question:`}
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Please enter a name',
+                          validator: (_, value) => {
+                            if (value.trim().length === 0) {
+                              return Promise.reject(new Error('Value is empty'));
+                            }
+                            return Promise.resolve();
+                          },
+                        },
+                      ]}
+                    >
                       <Input />
                     </Form.Item>
-                    <Form.Item name={[index, 'answer']} label={'Answer:'}>
+                    <Form.Item
+                      name={[index, 'answer']}
+                      label={'Answer:'}
+                      rules={[
+                        {
+                          required: true,
+                          message: 'Please enter a name',
+                          validator: (_, value) => {
+                            if (value.trim().length === 0) {
+                              return Promise.reject(new Error('Value is empty'));
+                            }
+                            return Promise.resolve();
+                          },
+                        },
+                      ]}
+                    >
                       <Input />
                     </Form.Item>
                     <Button danger onClick={() => remove(question.name)}>
